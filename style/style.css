@@ -172,13 +172,14 @@ main{
 }
 
 @media (max-width: 480px) {
-    main {width : 100%; }
+    .conteudo {width : 100%;
+    padding: 10px; }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    main {width : 90%; }
+    .conteudo {width : 90%; }
 }
 
 @media (min-width: 769px) {
-    main {width: 80%;}
+    .conteudo {width: 80%;}
 }
