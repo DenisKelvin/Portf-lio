@@ -32,8 +32,10 @@ main {
     flex: 1;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    gap: 10px;
-    padding: 0 300px 0 300px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .Slogan {
@@ -102,4 +104,16 @@ footer {
     text-decoration: none;
     font-weight: 300;
     color: white;
+}
+
+@media (max-width: 480px) {
+    main {width : 100%; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main {width : 90%; }
+}
+
+@media (min-width: 769px) {
+    main {width: 80%;}
 }
