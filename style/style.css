@@ -181,5 +181,5 @@ main{
 }
 
 @media (min-width: 769px) {
-    .conteudo {width: 80%;}
+    main {width: 80%;}
 }
