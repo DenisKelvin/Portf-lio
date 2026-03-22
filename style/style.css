@@ -20,6 +20,7 @@ main{
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
+    border: solid rgb(226, 225, 225) 2px;
 }
 
 .cabeçalho {
@@ -171,15 +172,3 @@ main{
     gap: 10px;
 }
 
-@media (max-width: 480px) {
-    .conteudo {width : 100%;
-    padding: 10px; }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .conteudo {width : 90%; }
-}
-
-@media (min-width: 769px) {
-    main {width: 80%;}
-}
