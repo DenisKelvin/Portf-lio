@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+#menu-check{
+    display: none !important;
+}
+
 html, body{
     display: flex;
     flex-direction: column;
@@ -170,5 +174,110 @@ main{
 
 .rede{
     gap: 10px;
+}
+
+
+
+
+@media(max-width: 1024px){
+
+    .Sobre{
+        display: none;
+    }
+    
+.paw{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.menu-button{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.menu_hamburguer{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transition: 0.3s ease-in-out;
+    
+}
+.menu_hamburguer::before,
+.menu_hamburguer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.menu_hamburguer::before{top: -10px;}
+.menu_hamburguer::after{bottom: -10px;}
+
+#menu-check:checked ~ .menu-button .menu_hamburguer{
+    background-color: transparent;
+}
+
+#menu-check:checked ~ .menu-button .menu_hamburguer{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+#menu-check:checked ~ .menu-button .menu_hamburguer{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-check{
+    display: none;
+}
+
+#menu-check:checked ~ .Sobre{
+    display: block;
+}
+.ap{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: "Work Sans", sans-serif;
+    font-size: x-large;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px; 
+    
+    color: rgb(0, 0, 0);
+    background-color: var(--glass-bg);
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.wb{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: "Work Sans", sans-serif;
+    font-size: x-large;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px; 
+    
+    color: rgb(0, 0, 0);
+    background-color:var(--glass-bg);
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 20px;
+    height: auto;
+}
+
 }
 
